@@ -9,7 +9,7 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BasicOperatorTest {
+public class TwoSumTest {
     PrintStream originalOut;
     ByteArrayOutputStream outputStream;
 
@@ -29,11 +29,11 @@ public class BasicOperatorTest {
     @Test
     public void testBasicOperator() {
         // Act
-        BasicOperator.main(null);
+        TwoSum.main(null);
 
         // Assert
         String output = outputStream.toString().trim();
-        assertEquals(96, Integer.parseInt(output));
+        assertEquals("Sum: 214", output);
     }
 
 }
