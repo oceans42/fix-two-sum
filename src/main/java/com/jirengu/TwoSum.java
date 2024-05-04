@@ -6,7 +6,7 @@ public class TwoSum {
         byte num1 = 104;
         byte num2 = 110;
         byte sum;
-        sum = (byte)(num1 + num2);
+        sum = num1 + num2;
         System.out.print("Sum: " + sum);
     }
 }
